@@ -31,7 +31,7 @@ public class HelloWorldServlet extends HttpServlet {
         out.println("<h2>Name Viewed:</h2>");
 
         for (String nameList : names) {
-            out.println("<ul><li>" + nameList + "</li></ul>");
+            out.println("<ol><li>" + nameList + "</li></ol>");
         }
 
 
