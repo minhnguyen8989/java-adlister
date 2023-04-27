@@ -20,17 +20,23 @@ public class HelloWorldServlet extends HttpServlet {
             out.println("<h1>Hello " + name + "!</h1>");
         } else {
             out.println("<h1>Hello, World!</h1>");
+            names.add("Null");
         }
 
         count++;
         out.println("<h1>Page views: " + count + "</h1>");
-        out.println("<h2>Name viewed: " + names + "</h2><br>");
+        out.println("<h1>------------------</h1>");
+        out.println("<h2>Reset: -->     /hello?reset=true");
+        out.println("<h1>------------------</h1>");
+        out.println("<h2>Name Viewed:</h2>");
+
+        for (String nameList : names) {
+            out.println("<ul><li>" + nameList + "</li></ul>");
+        }
+
 
 
         String reset = request.getParameter("reset");
-        out.println("<h2>Reset count: /hello?reset=true");
-
-
         if (reset != null && reset.equals("true")) {
             count = 0;
             names.clear();
