@@ -2,16 +2,15 @@
   Created by IntelliJ IDEA.
   User: home.folder
   Date: 5/1/23
-  Time: 2:15 PM
+  Time: 2:36 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Profile</title>
+    <title>Welcome Page</title>
 </head>
 <body>
-<jsp:include page="partials/welcome_title.jsp"></jsp:include>
-    <h1>Login Successful!</h1>
+  <h1>Welcome to CodeUp</h1>
 </body>
 </html>
