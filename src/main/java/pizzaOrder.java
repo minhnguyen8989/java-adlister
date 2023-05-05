@@ -19,14 +19,12 @@ public class pizzaOrder extends HttpServlet {
         String[] toppings = request.getParameterValues("toppings");
         String deliveryAddress = request.getParameter("deliveryAddress");
 
-        // Output the values submitted by the user
         System.out.println("Crust Type: " + crustType);
         System.out.println("Sauce Type: " + sauceType);
         System.out.println("Size Type: " + sizeType);
         System.out.println("Toppings: " + Arrays.toString(toppings));
         System.out.println("Delivery Address: " + deliveryAddress);
 
-        // Forward the request to the result JSP page
         request.getRequestDispatcher("order-form.jsp").forward(request, response);
     }
 }
